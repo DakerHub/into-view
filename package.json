@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.js -d build"
+    "build": "parcel build index.js -d build",
+    "dev": "parcel examples/example.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,6 @@
   "license": "MIT",
   "homepage": "https://github.com/your-github/your-repository/#README.md",
   "dependencies": {
+    "lodash.throttle": "^4.1.1"
   }
 }
