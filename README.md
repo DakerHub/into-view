@@ -1,6 +1,6 @@
-# zepto-plugin-template
+# into-view
 
-A template to white a plugin for Zepto
+A plugin to do something when the document scroll to somepalce
 
 ## Installation
 
@@ -10,11 +10,22 @@ Prerequisites:
 ## NPM
 
 ```
-$ git clone https://github.com/tony-cn/zepto-plugin-template.git
+$ git install --save into-view
 ```
 
 ## Usage
 
+```javascript
+import IntoView from './../index.js'
+
+window.intoView = new IntoView()
+intoView.whenScrollTo(200, function () {
+    console.log('yes')
+})
+intoView.whenIn($('#el1'), function () {
+    console.log('#el', this)
+})
+```
 
 
 ## Props
